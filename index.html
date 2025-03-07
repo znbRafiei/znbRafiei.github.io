@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مبدل واحد وزن</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>مبدل واحد وزن</h2>
+    <div class="input-group">
+      <label for="weight">مقدار (بر حسب گرم):</label>
+      <input type="number" id="value" placeholder="مقدار را وارد کنید" step="any">
+    </div>
+    <div class="input-group">
+      <label for="unit">تبدیل به:</label>
+      <select id="unit_to">
+        <option value="kg">کیلوگرم</option>
+        <option value="mg">میلی گرم </option>
+        <option value="ton">تن</option>
+        <option value="lb">پوند</option>
+        <option value="oz">اونس</option>
+      </select>
+    </div>
+    <button onclick="convertWeight()">نمایش نتیجه</button>
+    <p id="responseMessage"></p>
+  </div>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
